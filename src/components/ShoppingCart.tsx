@@ -40,7 +40,8 @@ export default function ShoppingCart() {
 						setCartOpen(true)
 						ev.stopPropagation()
 					}
-				}}>
+				}}
+				aria-label="cart">
 				<div className="w-full h-full [mask:url('../../icon-cart.svg')_no-repeat_center] bg-darkgrayishblue group-hover:bg-verydarkblue"></div>
 				{cartContents.length > 0 ? (
 					<div className="absolute top-0 right-0 w-6 bg-orange rounded-full text-[0.6rem] text-white text-center font-semibold select-none">
