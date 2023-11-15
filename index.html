@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/index.css">
+  <title>Ecommerce Product Page</title>
+  <script type="module" src="/src/main.tsx" defer></script>
+</head>
+
+<body
+  class="relative flex flex-col text-darkgrayishblue min-w-min min-h-screen max-w-screen-xl mx-auto md:px-8 invisible">
+  <header class="p-5 md:p-0 min-w-max border-lightgrayishblue md:border-b">
+    <div class="flex h-8 md:h-28 justify-between gap-10 items-center">
+      <div class="flex md:flex-row-reverse md:h-full gap-4 items-center">
+        <div id="nav-menu" class="w-4 h-4 md:w-auto md:h-full"></div>
+        <img src="logo.svg" alt="logo" />
+      </div>
+      <div class="flex h-full items-center gap-4">
+        <div id="shopping-cart" class="w-10 h-8"></div>
+        <button class="h-full md:h-14 group">
+          <img class="h-full group-hover:outline outline-[1px] outline-orange rounded-full" src="image-avatar.png"
+            alt="avatar" />
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="md:grow md:mx-[5%] md:grid grid-cols-[1fr_1fr] gap-32 items-center">
+    <div id="product-image" class="aspect-square max-w-screen-md"></div>
+    <div>
+      <div class="pt-5 px-5 space-y-3 md:space-y-6">
+        <h1 class="uppercase font-semibold tracking-wider text-orange">Sneaker Company</h1>
+        <h2 class="font-bold text-3xl md:text-6xl text-verydarkblue">Fall Limited Edition Sneakers</h2>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+          they'll
+          withstand everything the weather can offer.
+        </p>
+      </div>
+      <div class="px-5 py-6 space-y-6 md:space-y-10">
+        <div class="flex md:block">
+          <div class="flex items-center gap-4">
+            <div class="text-2xl text-verydarkblue font-bold">$125.00</div>
+            <div class="text-orange bg-paleorange rounded-md font-semibold px-2">50%</div>
+          </div>
+          <div class="text-grayishblue rounded-md font-semibold line-through ms-auto">$250.00</div>
+        </div>
+        <div id="quantity-select"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
